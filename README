@@ -1,9 +1,92 @@
-= ghostscript-fu
+ghostscript-fu
+==============
 
 Some ghostscript base knowledge.
 
-== Index
+Index
+-----
 
 1. math
 
 Contains some simple math operations.
+
+Base operators
+--------------
+
+The stacktransformation shows what the stack is before the command and what it is after the command is executed. An - signals an empty stack.
+
+### Stack operators
+
++ clear
+
+    Removes all stack contents.
+
+    Syntax:
+
+        clear
+
+    Stacktransformation:
+
+        obj_1...obj_i => -
+
++ dup
+
+    Duplicates top of the stack
+
+    Syntax:
+
+        dup
+
+    Stacktransformation:
+
+        ob => ob ob
+
++ exch
+
+    Changes the two top level elements of the stack.
+
+    Syntax:
+
+        exch
+
+    Stacktransformation:
+
+        ob_1 ob_2 => ob_2 ob_1
+
++ pop
+
+    Removes the first element of the stack.
+
+    Syntax:
+
+        pop
+
+    Stacktransformation:
+
+        ob_1 ob_2 => ob_1
+
+### Interactive operators
+
++ ==
+
+    Prints the first element of the stack and removes it.
+
+    Syntax:
+
+        ==
+
+    Stacktransformation:
+
+        ob => -
+
++ pstack
+
+    Prints the content of the stack.
+
+    Syntax:
+
+        pstack
+
+    Stacktransformation:
+
+        ob_1...ob_i => ob_1...ob_i
