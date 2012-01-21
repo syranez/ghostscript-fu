@@ -10,6 +10,17 @@ Index
 
 Contains some simple math operations.
 
+2. graphics
+
+Contains some simple graphics operations.
+
+Must-Knows
+----------
+
++ Standard unit is inch.
++ All widths and coordinates are in inch
++ You have a unvisible pen, which you can control with path operations.
+
 Base operators
 --------------
 
