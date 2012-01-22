@@ -18,6 +18,12 @@ Then stroke it, e. g.
         closepath
         stroke
 
+A newpath clears the current path and starts a new one.
+
+A closepath closes the current path by drawing a straight line to the last moveto point.
+
+Every stroke clears the current path. Thus you have to set a new starting point.
+
 Path manipulators
 -----------------
 
@@ -25,7 +31,7 @@ Be aware of newpath. It empties the current path and declares a new path. Thus s
 
 + moveto
 
-    Moves the pen to these absolute position.
+    Moves the pen to these absolute position, defining a starting point.
 
     Syntax:
 
@@ -101,7 +107,7 @@ Be aware of newpath. It empties the current path and declares a new path. Thus s
 
 + fill
 
-    Fills the current path with ink.
+    Fills the current path with ink. Also it clears the current path.
 
     Syntax:
 
@@ -115,7 +121,7 @@ Be aware of newpath. It empties the current path and declares a new path. Thus s
 
     Defines the shade of gray (0-1, float) in which the pen draws.
 
-    Syntax
+    Syntax:
 
         % put the shade on the stack
         shade
