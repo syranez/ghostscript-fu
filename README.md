@@ -26,6 +26,20 @@ Base operators
 
 The stacktransformation shows what the stack is before the command and what it is after the command is executed. An - signals an empty stack.
 
+### Output operators
+
++ showpage
+
+    Transfers the curent page to output device.
+
+    Syntax:
+
+        showpage
+
+    Stacktransformation:
+
+        obj_1...obj_i => obj_1...obj_i
+
 ### Stack operators
 
 + clear
