@@ -98,3 +98,31 @@ Be aware of newpath. It empties the current path and declares a new path. Thus s
     Stack transformation:
 
         obj_1...obj_i => obj_1...obj_i-1
+
++ fill
+
+    Fills the current path with ink.
+
+    Syntax:
+
+        fill
+
+    Stack transformation:
+
+        obj => obj
+
++ setgray
+
+    Defines the shade of gray (0-1, float) in which the pen draws.
+
+    Syntax
+
+        % put the shade on the stack
+        shade
+
+        setgray
+
+    Stack transformation:
+
+        obj_1...obj_i => obj_1...obj_i-1
+
