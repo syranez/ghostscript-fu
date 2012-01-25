@@ -1,0 +1,26 @@
+% example for defining a variable
+
+% /foo: push the name foo on the stack (use / to escape it)
+% 42: push the value to the stack
+% def: define the pair
+/foo 42 def
+
+foo
+==
+
+% set the variable to a new value (ze more interesting way)
+% /foo: name is foo
+% foo: put value of foo to the stack
+% 19: put 19 to the stack
+% sub: make a subtraction operation
+% def: define the result als new foo
+/foo foo 19 sub def
+
+foo
+==
+
+% of course, we do not need the sub
+/foo 23 def
+
+foo
+==

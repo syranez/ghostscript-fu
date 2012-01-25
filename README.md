@@ -14,6 +14,10 @@ Contains some simple math operations.
 
 Contains some simple graphics operations.
 
+3. dictionary
+
+Using the postscript dictionary.
+
 Must-Knows
 ----------
 
