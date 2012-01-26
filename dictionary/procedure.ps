@@ -1,0 +1,9 @@
+% example for defining a procedure
+
+% /foo: push the name foo on the stack (use / to escape it)
+% 42: push the instruction set to the stack
+% def: define the pair
+/double {2 mul} def
+
+23 double
+==
