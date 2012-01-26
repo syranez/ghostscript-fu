@@ -1,0 +1,21 @@
+% defines a procedure box, which draws the quadrat known as graphcs/rquadrat.ps
+
+/box
+{
+    newpath
+        300 500 moveto
+        0 200 rlineto
+        200 0 rlineto
+        0 -200 rlineto
+        -200 0 rlineto
+        4 setlinewidth
+    closepath
+    stroke
+}
+def
+
+box
+
+showpage
+
+quit
